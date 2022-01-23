@@ -10,8 +10,12 @@
     <a href="https://www.linkedin.com/in/eric-reyes-chi/"><i class="fab fa-linkedin fa-lg"></i></a>
   </li>
   <li> <%= link_to "Projects", "/" %></li>
- 
-  <li><%= link_to "About", home_about_path %></li>
-  
+  <li>
+  <%  if current_page?(home_about_path) %>
+  <%= link_to "Home", root_path %>
+    <% else %>
+    <%= link_to "About", home_about_path %>
+  <% end %>
+  </li>
 </ul>
 </nav>
