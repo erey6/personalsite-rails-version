@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Sitelinks</h1>
+
+<div id="sitelinks">
+  <% @sitelinks.each do |sitelink| %>
+    <%= render sitelink %>
+    <p>
+      <%= link_to "Show this sitelink", sitelink %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New sitelink", new_sitelink_path %>

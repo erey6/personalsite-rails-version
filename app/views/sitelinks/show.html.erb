@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @sitelink %>
+
+<div>
+  <%= link_to "Edit this sitelink", edit_sitelink_path(@sitelink) %> |
+  <%= link_to "Back to sitelinks", sitelinks_path %>
+
+  <%= button_to "Destroy this sitelink", @sitelink, method: :delete %>
+</div>

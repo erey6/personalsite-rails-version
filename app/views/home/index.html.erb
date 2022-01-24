@@ -16,7 +16,12 @@
   >
 </section>
 <section id="projects">
-  <h1>My Projects</h1>
- 
+  <h1>My Projectsee</h1>
+  <div class="flex-container">
+  <% @projects.each do |project| %>
+    <%= render project %>
+  
+  <% end %>
+</div>
 </section>
 </main>
