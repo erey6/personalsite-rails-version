@@ -4,7 +4,9 @@
 
     <%= project.title %>
   </h2>
-
+  <% if project.image.attached? %>
+  <img src= "<%=(url_for(project.image))%>" alt="<%= project.title %> screen shot">
+<% end %>
   <p>
 
     <%= project.description %>
@@ -19,9 +21,7 @@
     <%= sitelink.name %></a></li>
   <% end %>
   </ul>
-  <p>
-    <strong>Picurl:</strong>
-    <%= project.picurl %>
-  </p>
+
+
 
 </div>
