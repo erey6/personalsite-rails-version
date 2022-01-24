@@ -65,6 +65,6 @@ class SitelinksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def sitelink_params
-      params.require(:sitelink).permit(:name, :url)
+      params.require(:sitelink).permit(:name, :url, :project_id )
     end
 end

@@ -1,15 +1,15 @@
+
 <div id="<%= dom_id sitelink %>">
-  <p>
-    <strong>Name:</strong>
-    <%= sitelink.name %>
-  </p>
+  
   <p>
     <strong>Project id:</strong>
     <%= sitelink.project_id %>
   </p>
   <p>
-    <strong>Url:</strong>
-    <%= sitelink.url %>
+    <a href="<%= sitelink.url %>"> 
+    <%= sitelink.name %></a>
   </p>
+  
 
 </div>
+

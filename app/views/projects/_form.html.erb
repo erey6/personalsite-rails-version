@@ -12,7 +12,7 @@
   <% end %>
 
   <div>
-    <h3>ID: <%= project.id %></h3>
+
     <%= form.label :title, style: "display: block" %>
     <%= form.text_field :title, :size=>"48"  %>
   </div>
@@ -29,11 +29,10 @@
 
   <div>
     <%= form.fields_for :sitelinks do |builder| %>
-      <%= builder.label :name, "Name" %> <br />
+      <%= builder.label :name, "link text" %> <br />
         <%= builder.text_field :name %> <br />
         <%= builder.label :url, "url" %> <br />
-        <%= builder.text_field :url %>
-
+        <%= builder.text_field :url %><br/>
     <% end %>
   </div>
 

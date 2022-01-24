@@ -11,14 +11,14 @@
   </p>
 
   <p>
-    Tech: <%= project.tech %>
+    TECH: <%= project.tech %>
   </p>
-
-  <p>
-    <strong>Links:</strong>
-    <%= project.links %>
-  </p>
-
+  <ul>
+  <% project.sitelinks.each do |sitelink| %>
+    <li><a href="<%= sitelink.url %>" target="_blank"> 
+    <%= sitelink.name %></a></li>
+  <% end %>
+  </ul>
   <p>
     <strong>Picurl:</strong>
     <%= project.picurl %>

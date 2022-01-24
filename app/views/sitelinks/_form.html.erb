@@ -20,6 +20,13 @@
     <%= form.label :url, style: "display: block" %>
     <%= form.text_field :url %>
   </div>
+  <div>
+  <h4>Select project to go with</h4>
+  <%= form.collection_select(:project_id, Project.all, :id, :title) %>
+</div>
+  
+
+  
 
 
   <div>
