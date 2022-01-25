@@ -1,5 +1,6 @@
 class SitelinksController < ApplicationController
   before_action :set_sitelink, only: %i[ show edit update destroy ]
+  before_action :authenticate_admin!
 
   # GET /sitelinks or /sitelinks.json
   def index
@@ -63,7 +64,7 @@ class SitelinksController < ApplicationController
       @sitelink = Sitelink.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
+    # Only allow a list of trusted parameters through. I had to whitelist project_id to get this the has_many to work for creating
     def sitelink_params
       params.require(:sitelink).permit(:name, :url, :project_id )
     end

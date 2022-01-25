@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins
-  devise_for :views
+  devise_for :admins, controllers: { registrations: "registrations" }
   resources :sitelinks
   resources :projects
   #get 'home/index'
