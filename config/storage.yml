@@ -10,26 +10,26 @@ google:
   service: GCS
   credentials:
     type: "service_account"
-    project_id: <%= ENV['GCS_PROJECT_ID'] %>
-    private_key_id: <%= ENV['GCS_PRIVATE_KEY_ID'] %>
-    private_key: <%= ENV['GCS_PRIVATE_KEY'] %>
-    client_email: <%= ENV['GCS_CLIENT_EMAIL'] %>
-    client_id: <%= ENV['GCS_CLIENT_ID'] %>
+    project_id: "personalsite-rails-storage"
+    private_key_id: <%= Rails.application.credentials.dig(:google, :private_key_id) %>
+    private_key: <%= Rails.application.credentials.dig(:google, :private_key) %>
+    client_email: "portfolio-storage@personalsite-rails-storage.iam.gserviceaccount.com"
+    client_id: "103963429366395605737"
     auth_uri: "https://accounts.google.com/o/oauth2/auth"
     token_uri: "https://oauth2.googleapis.com/token"
     auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
-    client_x509_cert_url: <%= ENV['GCS_CLIENT_X509_CERT_URL'] %>
-  project: <%= ENV['GCS_PROJECT'] %>
-  bucket: <%= ENV['GCS_BUCKET'] %>
+    client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/portfolio-storage%40personalsite-rails-storage.iam.gserviceaccount.com"
+  project: "Personalsite rails storage"
+  bucket: "portfolio-ruby-active-storage"
 
 
 # Use bin/rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
-# amazon:
-#   service: S3
-#   access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
-#   secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
-#   region: us-east-1
-#   bucket: your_own_bucket-<%= Rails.env %>
+amazon:
+  service: S3
+  access_key_id: <%= Rails.application.credentials.dig(:aws, :access_key_id) %>
+  secret_access_key: <%= Rails.application.credentials.dig(:aws, :secret_access_key) %>
+  region: us-east-2
+  bucket: ror-portfolio
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:

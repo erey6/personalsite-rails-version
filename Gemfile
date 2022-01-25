@@ -31,9 +31,9 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
-# Using google storage for active storage
-gem "google-cloud-storage"
-
+# Using aws storage for active storage
+#gem "google-cloud-storage"
+gem 'aws-sdk-s3'
 # Using dot-3nv
 gem 'dotenv-rails', groups: [:development, :test]
 
