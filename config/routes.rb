@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admins
+  devise_for :views
   resources :sitelinks
   resources :projects
   #get 'home/index'
