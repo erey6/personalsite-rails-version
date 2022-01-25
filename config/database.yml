@@ -6,8 +6,8 @@ default: &default
 
 development:
   <<: *default
-  username: eric
-  password: eric
+  username: <%= ENV['DATABASE_USERNAME'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   host: localhost
   port: 5432
   database: personalsite
