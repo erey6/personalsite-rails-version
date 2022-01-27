@@ -99,7 +99,14 @@ main {
     border: 1.2px solid #00000048;
     padding: 1.2em; 
     border-radius: 2.4px;
-box-shadow: 2px 2px 2px #00000033;
+    box-shadow: .6px .6px .9px #00000033;
+    transition: .2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateZ(0);
+    box-shadow: 0.9px 2.4px 6.9px #00000060;
+    margin-bottom: .9em;
 }
 
 .card ul {
