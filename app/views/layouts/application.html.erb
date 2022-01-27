@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -12,6 +13,7 @@
       crossorigin="anonymous"
     />
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= favicon_link_tag asset_path('favicon.ico') %>
   </head>
 
   <body>
