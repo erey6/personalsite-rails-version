@@ -106,7 +106,6 @@ main {
 .card:hover {
     transform: translateZ(0);
     box-shadow: 0.9px 2.4px 6.9px #00000060;
-    margin-bottom: .9em;
 }
 
 .card ul {
