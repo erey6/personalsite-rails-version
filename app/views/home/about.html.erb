@@ -5,7 +5,8 @@
         <div >
            <p> I'm a former journalist who sought to change careers during the pandemic. </p>
            <p>After teaching myself some Python, HTML, CSS and JavaScript, I enrolled in General Assembly's Software Engineering Immersive course and deepened my understanding of web development concepts and best practices.</p>
-           <h3><%= link_to "RESUME", asset_path("EricReyesResume.pdf") %></h3>
+           <h3><%= link_to "RESUME", asset_path("/documents/EricReyesResume.pdf", skip_pipeline: true)%></h3>
+           <%= link_to "RESUME", asset_path("EricReyesResume.pdf"), style:"display: none" %>
         </div>
 
 
