@@ -18,6 +18,8 @@
     <%= link_to "About", home_about_path %>
   <% end %>
   </li>
+  <li><%= link_to "Resume", asset_path("/documents/EricReyesResume.pdf", skip_pipeline: true)%>
+  </li>
   
   <%if admin_signed_in?%>
   <li>
