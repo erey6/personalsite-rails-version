@@ -7,7 +7,7 @@ class HomeController < ApplicationController
   end
   def past
     @images = Dir.chdir(Rails.root.join('app/assets/images')) do
-      Dir.glob("covers/*")
+      Dir.glob("*.png")
     end
   end
 end
