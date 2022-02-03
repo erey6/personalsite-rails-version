@@ -30,7 +30,8 @@ header h2 a {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #f0eaea;
+    background-color: #fff;
+    color: #333;
 }
 
 header {
@@ -139,6 +140,19 @@ main {
     background-color: rgb(92, 29, 29);
   }
 
+  .covers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 6px;
+    background-color: #fff;
+    justify-content: space-evenly;
+  }
+
+  .covers img {
+    width: 27%;
+  }
+
 @media only screen and (max-width: 600px) {
     main {
         width: 96%;
@@ -174,6 +188,9 @@ main {
         color:red;
         font-weight: bolder;
     }
+    .covers img {
+        width: 100%;
+      }
 
 }
 

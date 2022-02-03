@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   #get 'home/index'
   root "home#index"
   get "home/about"
+  get "home/past"
   #external redirects for portfiolio apps
   get "/coffee" => redirect("https://ericapp1.herokuapp.com/coffees/home")
   get "/calorie" => redirect("https://stoic-fermat-358370.netlify.app/")
