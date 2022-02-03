@@ -4,10 +4,12 @@
 <div >
 <p>Until late 2021, I was an award-winning Chicago-based communications professional with more than two decades in the media industry as a reporter, editor and visual journalist.</p>
 <p>I closed my career as a senior editor at Tribune Publishing's Design and Production Studio where I managed a five-person team and designed front pages for the Chicago Tribune, Baltimore Sun, Orlando Sentinel and South Florida Sun Sentinel.</p>
+<p>Below are just a few samples of work during that time.</p>
 </div>
-<div> 
-
-
+<div class = "covers"> 
+   <% @images.each do |image| %>
+     <%= image_tag image, alt: "newspaper cover" %>
+   <% end %>
 </div>
 
 
