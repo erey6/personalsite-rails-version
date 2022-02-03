@@ -1,0 +1,196 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+header h2 a {
+    font-size: 1.2em;
+    color: whitesmoke;
+    text-decoration: none;
+
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color:rgb(61, 12, 12);
+    color: whitesmoke;
+    padding: .9em 3.6em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
+}
+
+ul{
+    display: flex; 
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    margin-left: 1.8em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+ button:hover {
+     color: rgb(44, 24, 24);
+ }
+
+.hero {
+    margin-top: 8em;
+}
+
+.hero h1 {
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+.hero p {
+    font-size: 1.3rem;
+}
+.hero h1 span {
+    color:rgb(92, 29, 29)
+}
+
+main {
+    width: 732px;
+    margin: 0 auto;
+}
+
+#projects {
+    margin-top: 9em;
+}
+
+#projects img {
+    max-width: 93%;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+.flex-container .card {
+    width: 45%;
+    border: 1.2px solid #00000048;
+    padding: 1.2em; 
+    border-radius: 2.4px;
+    box-shadow: .6px .6px .9px #00000033;
+    transition: .2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateZ(0);
+    box-shadow: 0.9px 2.4px 6.9px #00000060;
+}
+
+.card ul {
+    justify-content:flex-start;
+    padding: 0;
+    margin-bottom: .3em;
+}
+
+.card ul li {
+    margin-right: 1.2em;
+    color: black;
+    font-size: .9rem;
+}
+#myBtn {
+    display: none;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 21px; /* Place the button at the bottom of the page */
+    right: 90px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    background-color: rgb(61, 12, 12); /* Set a background color */
+    color: whitesmoke; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 2.4px; /* Rounded corners */
+    font-size: .9rem; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+    background-color: rgb(92, 29, 29);
+  }
+
+  .covers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding-top: 6px;
+    background-color: #fff;
+    justify-content: space-evenly;
+  }
+
+  .covers img {
+    width: 27%;
+  }
+
+@media only screen and (max-width: 600px) {
+    main {
+        width: 96%;
+    }
+    .hero h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+    .flex-container .card {
+        width: 100%;
+        border: 1.2px solid #00000048;
+        padding: 1em; 
+        border-radius: 2.4px;
+    box-shadow: 2px 2px 2px #00000033;
+    }
+     header {
+         padding: .3em;
+     }
+     nav ul li a{
+        padding-right: 1em;
+        font-size: .9rem;
+        line-height: 1.5em;
+     }
+
+     nav ul{
+        flex-wrap: wrap;
+    }
+
+    .active {
+        color:red;
+        font-weight: bolder;
+    }
+    .covers img {
+        width: 100%;
+      }
+
+}
+
