@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @projects = Project.all
+    @projects = Project.all.order(:id)
     render :index
   end
   def about
