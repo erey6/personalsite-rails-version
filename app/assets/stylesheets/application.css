@@ -175,17 +175,24 @@ main {
          padding: .3em;
      }
      nav ul li a{
-        padding-right: 1em;
+        padding-right: .2em;
         font-size: .9rem;
         line-height: 1.5em;
      }
 
      nav ul{
         flex-wrap: wrap;
+        padding: 0;
+    }
+    header nav {
+        flex-direction: column;
+    }
+
+    header h2 a {
+        padding-left: 1em;
     }
 
     .active {
-        color:red;
         font-weight: bolder;
     }
     .covers img {
