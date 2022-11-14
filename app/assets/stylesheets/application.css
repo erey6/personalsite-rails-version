@@ -15,7 +15,7 @@
 
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
 
 * {
     box-sizing: border-box;
@@ -29,13 +29,13 @@ header h2 a {
 }
 
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Neuton', serif;
     background-color: #fff;
     color: #333;
 }
 
 header {
-    background-color:rgb(61, 12, 12);
+    background-color:#19454b;
     color: whitesmoke;
     padding: .9em 3.6em;
 }
@@ -76,7 +76,7 @@ nav ul li a {
     font-size: 1.3rem;
 }
 .hero h1 span {
-    color:rgb(92, 29, 29)
+    color: #F28500;
 }
 
 main {
@@ -128,7 +128,7 @@ main {
     right: 90px; /* Place the button 30px from the right */
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
-    background-color: rgb(61, 12, 12); /* Set a background color */
+    background-color: #F28500; /* Set a background color */
     color: whitesmoke; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -137,7 +137,7 @@ main {
   }
   
   #myBtn:hover {
-    background-color: rgb(92, 29, 29);
+    background-color: #F28500;
   }
 
   .covers {
